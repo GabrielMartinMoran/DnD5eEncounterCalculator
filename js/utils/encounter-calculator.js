@@ -9,7 +9,7 @@ export const calculate = (characters, monsters, difficultyAdjustments) => {
 
     let monstersDifficultyMultiplier = getMonstersDifficultyMultiplier(characters, monsters, difficultyAdjustments);
 
-    const adjustedTotalXP = calculateTotalXP(monsters) * monstersDifficultyMultiplier;
+    const adjustedTotalXP = Math.floor(calculateTotalXP(monsters) * monstersDifficultyMultiplier);
 
     const partyTier = CONFIG.XP_PER_CHARACTER_LEVEL[avgPartyLevel];
 
@@ -115,6 +115,10 @@ const getMonstersDifficultyMultiplier = (characters, monsters, difficultyAdjustm
 
     if (difficultyAdjustments.combatOptimizedCharacters) {
         monstersThresholdMultiplier += CONFIG.XP_MULTIPLIERS.COMBAT_OPTIMIZED_CHARACTERS;
+    }
+
+    if (monstersThresholdMultiplier < CONFIG.MIN_POSSIBLE_MULTIPLIER) {
+        monstersThresholdMultiplier = CONFIG.MIN_POSSIBLE_MULTIPLIER;
     }
 
     return monstersThresholdMultiplier;

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>D&D 5e encounter calculator</title>
+        <link rel="shortcut icon" href="assets/icon.png" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+    <footer>
+        <script>
+            var $ = (query) => {
+                if (query.charAt(0) === '#') return document.getElementById(query.substr(1));
+                return document.querySelector(query);
+            };
+
+            // Only for templating
+            var html = String.raw;
+        </script>
+        <script src="js/app.js" type="module"></script>
+    </footer>
+</html>

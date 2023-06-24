@@ -34,6 +34,11 @@ export const calculate = (characters, monsters, difficultyAdjustments) => {
         difficulty = 'trivial';
     }
 
+    let partyDailyBudget = 0;
+    for (const character of characters) {
+        partyDailyBudget += CONFIG.DAILY_XP_BUDGET[character.level];
+    }
+
     return {
         avgPartyLevel: avgPartyLevel,
         totalXP: totalXP,
@@ -48,6 +53,8 @@ export const calculate = (characters, monsters, difficultyAdjustments) => {
         difficultyMultiplier: monstersDifficultyMultiplier,
         difficulty: difficulty,
         xpPerCharacter: Math.floor(adjustedTotalXP / characters.length),
+        partyDailyBudget: partyDailyBudget,
+        partyDailyBudgetPercentage: Math.floor((adjustedTotalXP / partyDailyBudget) * 100),
     };
 };
 

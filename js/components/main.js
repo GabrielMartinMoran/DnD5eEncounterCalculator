@@ -17,8 +17,11 @@ export const Main = () => {
         if (characters.length === 0 || monsters.length === 0) return;
         const difficultyAdjustments = collectDifficultyAdjustments();
         const result = calculate(characters, monsters, difficultyAdjustments);
-        console.log(result);
         $('#results').innerHTML = Results(result);
+    };
+
+    const generateLangURL = (lang) => {
+        return `${window.location.origin}${window.location.pathname}?lang=${lang}`;
     };
 
     onRender(() => {
@@ -28,8 +31,13 @@ export const Main = () => {
     return html`
         <h1 id="title">${locateStr('title')}</h1>
         <div>
-            ${URLParamsProvider.getLanguage() === 'ES' ? 'Español' : html`<a href="/?lang=ES">Español</a>`} |
-            ${URLParamsProvider.getLanguage() === 'EN' ? 'English' : html`<a href="/?lang=EN">English</a>`}
+            ${URLParamsProvider.getLanguage() === 'ES'
+                ? 'Español'
+                : html`<a href="${generateLangURL('ES')}">Español</a>`}
+            |
+            ${URLParamsProvider.getLanguage() === 'EN'
+                ? 'English'
+                : html`<a href="${generateLangURL('EN')}">English</a>`}
         </div>
         <div class="row verticalMargin">
             <div class="column flex1 horizontalMargin">

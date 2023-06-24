@@ -9,11 +9,11 @@ export const TRANSLATIONS = {
         calculate: 'Calcular',
         difficultyAdjustmentOptions: 'Opciones de ajuste de dificultad',
         difficultyAdjustmentOptionsDisclaimer:
-            'Ten cuidado al usar estas opciones dado que podrían desbalancear el combate si no se utilizan correctamente.',
+            'Ten cuidado al usar estas opciones dado que podrían desbalancear el combate en favor de los enemigos si no se utilizan correctamente.',
         extraLevel1Feat:
             'Dote extra a nivel 1 (dependiendo de las dotes elegidas, los personajes pueden obtener un aumento de poder significativo en comparación con la construcción de personajes de nivel 1 predeterminada)',
         relevanCombatMagicItems:
-            'Objetos mágicos de combate relevantes (algunos elementos mágicos aumentan significativamente la CA, las probabilidades de golpear, la CD de conjuros, el daño que realizan los personajes)',
+            'Objetos mágicos relevantes para el combate (algunos objetos mágicos aumentan significativamente la CA, las probabilidades de golpear, la CD de conjuros, o el daño que realizan los personajes)',
         newSubclasses:
             'Nuevas subclases (las subclases de TCE, por ejemplo, tienden a tener un aumento de poder con respecto a las del PHB)',
         obtimizedCharacters:
@@ -41,6 +41,12 @@ export const TRANSLATIONS = {
         adjustedXP: 'XP ajustada',
         difficultyMultiplier: 'Multiplicador de dificultad',
         referenceThresholds: 'Umbrales de referencia',
+        tier: 'rango',
+        dailyXPBudget: 'Presupuesto diario de XP',
+        dailyXPBudgetPercentage:
+            'Con este encuentro, el grupo competará un {perc}% de su presupuesto de XP por día de aventura.',
+        dailyXPBudgetExplanation:
+            'La mayoría de grupos podrán enfrentarse a entre seis y ocho encuentros de dificultad media o difíciles al día. Si la aventura tiene encuentros más fáciles, podrán lidiar con más en un mismo día. Si, por el contrario, alberga más encuentros mortales, podrán superar una menor cantidad de ellos. En general, a lo largo de un día de avent uras, el grupo probablemente tenga que hacer dos descansos cortos, uno tras una tercera parte del día y el otro pasadas dos terceras partes.',
     },
     EN: {
         title: 'A D&D 5e encounter calculator',
@@ -52,11 +58,11 @@ export const TRANSLATIONS = {
         calculate: 'Calculate',
         difficultyAdjustmentOptions: 'Difficulty adjustment options',
         difficultyAdjustmentOptionsDisclaimer:
-            'Be careful when using these options as they could unbalance combat if not used correctly.',
+            'Be careful when using these options as they could unbalance combat in favor of the enemies if they are not used correctly.',
         extraLevel1Feat:
             'Extra feat at level 1 (depending on the chosen feats, the characters may get a significant power increase compared with the default level 1 character build)',
         relevanCombatMagicItems:
-            'Relevant combat magic items (some magical items increase significantly the AC, probabilities to hit, spells DC, and damage output from the characters)',
+            "Relevant combat magic items (some magical items increase significantly the AC, probabilities to hit, spells DC, or character's damage output)",
         newSubclasses:
             'New subclasses (subclasses from TCE, for instance, tend to have a higher power creep than the ones from PHB)',
         obtimizedCharacters:
@@ -84,5 +90,11 @@ export const TRANSLATIONS = {
         adjustedXP: 'Adjusted XP',
         difficultyMultiplier: 'Difficulty multiplier',
         referenceThresholds: 'Reference thresholds',
+        tier: 'tier',
+        dailyXPBudget: 'Daily XP budget',
+        dailyXPBudgetPercentage:
+            'With this encounter, the party will complete a {perc}% of their daily xp budget per adventuring day.',
+        dailyXPBudgetExplanation:
+            'Most adventuring parties can handle about six to eight medium or hard encounters in a day. If the adventure has more easy encounters, the adventurers can get through more. If it has more deadly encounters, they can handle fewer. In general, over the course of a full adventuring day, the party will likely need to take two short rests, about one-third and two-thirds of the way through the day.',
     },
 };

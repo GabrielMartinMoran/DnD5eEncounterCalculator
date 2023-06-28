@@ -46,7 +46,10 @@ export const TRANSLATIONS = {
         dailyXPBudgetPercentage:
             'Con este encuentro, el grupo competará un {perc}% de su presupuesto de XP por día de aventura.',
         dailyXPBudgetExplanation:
-            'La mayoría de grupos podrán enfrentarse a entre seis y ocho encuentros de dificultad media o difíciles al día. Si la aventura tiene encuentros más fáciles, podrán lidiar con más en un mismo día. Si, por el contrario, alberga más encuentros mortales, podrán superar una menor cantidad de ellos. En general, a lo largo de un día de avent uras, el grupo probablemente tenga que hacer dos descansos cortos, uno tras una tercera parte del día y el otro pasadas dos terceras partes.',
+            'La mayoría de grupos podrán enfrentarse a entre seis y ocho encuentros de dificultad media o difíciles al día. Si la aventura tiene encuentros más fáciles, podrán lidiar con más en un mismo día. Si, por el contrario, alberga más encuentros mortales, podrán superar una menor cantidad de ellos. En general, a lo largo de un día de aventuras, el grupo probablemente tenga que hacer dos descansos cortos, uno tras una tercera parte del día y el otro pasadas dos terceras partes.',
+        isLegendaryMonster:
+            '¿Es un monstruo legendario? (Un monstruo legendario posee acciones legendarias. En XGE, hay un ajuste en el calculo de dificultad para combates con 1 solo monstruo legendario que sera aplicado si esta opción esta marcada)',
+        legendaryMonster: 'Monstruo legendario',
     },
     EN: {
         title: 'A D&D 5e encounter calculator',
@@ -96,5 +99,8 @@ export const TRANSLATIONS = {
             'With this encounter, the party will complete a {perc}% of their daily xp budget per adventuring day.',
         dailyXPBudgetExplanation:
             'Most adventuring parties can handle about six to eight medium or hard encounters in a day. If the adventure has more easy encounters, the adventurers can get through more. If it has more deadly encounters, they can handle fewer. In general, over the course of a full adventuring day, the party will likely need to take two short rests, about one-third and two-thirds of the way through the day.',
+        isLegendaryMonster:
+            'Is it a legendary monster? (A legendary monster has legendary actions. In XGE, there is an adjustment in the calculation of single legendary monsters difficulty that will be applied if this option is checked)',
+        legendaryMonster: 'Legendary monster',
     },
 };

@@ -29,7 +29,12 @@ export const Results = (results) => {
             </div>
             <div class="horizontalMargin verticalMargin">
                 <div><b>${locateStr('totalXP')}: </b> ${results.totalXP}</div>
-                <div><b>${locateStr('difficultyMultiplier')}: </b> ${results.difficultyMultiplier}</div>
+                <div>
+                    <b>${locateStr('difficultyMultiplier')}: </b>
+                    ${results.difficultyMultiplier}${results.isLegendaryMonster ? html`
+                    <i>(✨ ${locateStr('legendaryMonster')})</i>
+                    ` : ''}
+                </div>
                 <div><b>${locateStr('adjustedXP')}: </b> ${results.adjustedTotalXP}</div>
             </div>
 

@@ -55,6 +55,7 @@ export const calculate = (characters, monsters, difficultyAdjustments) => {
         xpPerCharacter: Math.floor(adjustedTotalXP / characters.length),
         partyDailyBudget: partyDailyBudget,
         partyDailyBudgetPercentage: Math.floor((adjustedTotalXP / partyDailyBudget) * 100),
+        isLegendaryMonster: difficultyAdjustments.isLegendaryMonster,
     };
 };
 
@@ -97,7 +98,11 @@ const getMonstersDifficultyMultiplier = (characters, monsters, difficultyAdjustm
                 ? CONFIG.XP_MULTIPLIERS.TOO_MANY_ENEMIES_SMALL_PARTY
                 : CONFIG.XP_MULTIPLIERS.SMALL_PARTY;
     }
-    if (monsters.length == 1 && characters.length >= CONFIG.BIG_PARTY_SIZE) {
+    if (
+        monsters.length == 1 &&
+        characters.length >= CONFIG.BIG_PARTY_SIZE &&
+        !difficultyAdjustments.isLegendaryMonster
+    ) {
         monstersThresholdMultiplier += CONFIG.XP_MULTIPLIERS.BIG_PARTY;
     }
 

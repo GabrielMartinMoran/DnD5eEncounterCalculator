@@ -4,5 +4,6 @@ export const collectDifficultyAdjustments = () => {
         relevantCombatMagicItems: $('#relevantCombatMagicItemsChk').checked,
         newSubclasses: $('#newSubclassesChk').checked,
         combatOptimizedCharacters: $('#combatOptimizedCharactersChk').checked,
+        isLegendaryMonster: $('#isLegendaryMonsterChk').checked,
     };
 };

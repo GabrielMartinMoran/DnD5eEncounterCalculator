@@ -66,6 +66,10 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.grayText {
+    color: rgb(169, 163, 163);
+}
+
 /* MOBILE */
 @media (max-width: 700px) {
 }

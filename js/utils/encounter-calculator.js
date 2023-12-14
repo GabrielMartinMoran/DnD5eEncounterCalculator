@@ -107,7 +107,9 @@ const getMonstersDifficultyMultiplier = (characters, monsters, difficultyAdjustm
     }
 
     if (difficultyAdjustments.levelOneFeatChk) {
-        monstersThresholdMultiplier += CONFIG.XP_MULTIPLIERS.LEVEL_ONE_FEAT;
+        const avgPartyLevel = calculateAvgPartyLevel(characters);
+        const levelAdjustment = Math.sqrt(1 / avgPartyLevel);
+        monstersThresholdMultiplier += CONFIG.XP_MULTIPLIERS.LEVEL_ONE_FEAT * levelAdjustment;
     }
 
     if (difficultyAdjustments.relevantCombatMagicItems) {
@@ -126,5 +128,6 @@ const getMonstersDifficultyMultiplier = (characters, monsters, difficultyAdjustm
         monstersThresholdMultiplier = CONFIG.MIN_POSSIBLE_MULTIPLIER;
     }
 
-    return monstersThresholdMultiplier;
+    // Round to 2 decimals
+    return Math.round(monstersThresholdMultiplier * 100) / 100;
 };

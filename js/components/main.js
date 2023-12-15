@@ -39,13 +39,13 @@ export const Main = () => {
                 ? 'English'
                 : html`<a href="${generateLangURL('EN')}">English</a>`}
         </div>
-        <div class="row verticalMargin">
+        <div class="wrappableRow verticalMargin">
             <div class="column flex1 horizontalMargin">
                 <div class="column">${Characters()} ${Monsters()}</div>
                 <button class="verticalMargin" id="calculateBtn">${locateStr('calculate')}</button>
                 <div class="horizontalMargin flex1" id="results"></div>
             </div>
-            <div class="flex1 horizontalMargin">${DifficultyAdjutments()}</div>
+            <div class="flex1 horizontalMargin mobileVerticalMargin">${DifficultyAdjutments()}</div>
         </div>
     `;
 };

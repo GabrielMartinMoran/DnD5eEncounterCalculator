@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "moduleResolution": "classic",
+        "target": "ES6",
+        "allowImportingTsExtensions": false,
+        "allowJs": true,
+        "alwaysStrict": true,
+        "checkJs": true,
+        "strict": false
+    },
+    "exclude": []
+}

@@ -1,9 +1,11 @@
 export const TRANSLATIONS = {
     ES: {
         title: 'Una calculadora de encuentros de D&D 5e',
-        characters: 'Personajes',
-        monsters: 'Monstruos',
+        allies: 'Aliados',
+        enemies: 'Enemigos',
         add: 'Agregar',
+        addCharacter: 'Agregar personaje',
+        addMonster: 'Agregar monstruo',
         amount: 'Cantidad',
         level: 'Nivel',
         calculate: 'Calcular',
@@ -53,9 +55,11 @@ export const TRANSLATIONS = {
     },
     EN: {
         title: 'A D&D 5e encounter calculator',
-        characters: 'Characters',
-        monsters: 'Monsters',
+        allies: 'Allies',
+        enemies: 'Enemies',
         add: 'Add',
+        addCharacter: 'Add character',
+        addMonster: 'Add monster',
         amount: 'Amount',
         level: 'Level',
         calculate: 'Calculate',

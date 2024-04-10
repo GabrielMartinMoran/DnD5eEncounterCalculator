@@ -247,4 +247,6 @@ export const CONFIG = {
         19: 30000,
         20: 40000,
     },
+
+    LEVEL_TO_CR_CONVERSION_FACTOR: 2 / 3,
 };

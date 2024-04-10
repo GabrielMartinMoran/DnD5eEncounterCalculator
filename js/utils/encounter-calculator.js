@@ -1,7 +1,11 @@
 import { CONFIG } from '../config.js';
+import { normalizeToCharacterLevels, normalizeToMonsterCRs } from '../helpers/creature-normalizer.js';
 
-export const calculate = (characters, monsters, difficultyAdjustments) => {
-    if (characters.length === 0 || monsters.length === 0) return null;
+export const calculate = (allies, enemies, difficultyAdjustments) => {
+    if (allies.length === 0 || enemies.length === 0) return null;
+
+    const characters = normalizeToCharacterLevels(allies);
+    const monsters = normalizeToMonsterCRs(enemies);
 
     const avgPartyLevel = calculateAvgPartyLevel(characters);
 

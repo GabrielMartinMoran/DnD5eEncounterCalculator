@@ -70,6 +70,27 @@ body {
     color: rgb(169, 163, 163);
 }
 
+.levelCRLabel {
+    display: inline-block;
+    min-width: 50px;
+    text-align: center;
+}
+
+.levelCRSelect {
+    width: 120px;
+}
+
+.combatSideTitle {
+    display: inline-block;
+    width: 60px;
+}
+
+.addCombatantBtn {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+}
+
 /* MOBILE */
 @media (max-width: 700px) {
     .wrappableRow {

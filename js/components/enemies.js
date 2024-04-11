@@ -10,6 +10,7 @@ export const Enemies = () => {
         const deleteBtnId = `removeEnemy-${id}`;
         $('#enemiesList').appendChild(HTMLElement(CombatantEditor(id, type, deleteBtnId), id));
         onRender(() => ($(`#${deleteBtnId}`).onclick = () => removeEnemy(id)));
+        onchange();
         return id;
     };
 

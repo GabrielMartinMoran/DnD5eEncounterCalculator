@@ -1,6 +1,6 @@
 export const TRANSLATIONS = {
     ES: {
-        title: 'Una calculadora de encuentros de D&D 5e',
+        title: 'Una calculadora de encuentros de D&D 5e 2024',
         allies: 'Aliados',
         enemies: 'Enemigos',
         add: 'Agregar',
@@ -44,7 +44,7 @@ export const TRANSLATIONS = {
             'La mayoría de grupos podrán enfrentarse a entre seis y ocho encuentros de dificultad media o difíciles al día. Si la aventura tiene encuentros más fáciles, podrán lidiar con más en un mismo día. Si, por el contrario, alberga más encuentros mortales, podrán superar una menor cantidad de ellos. En general, a lo largo de un día de aventuras, el grupo probablemente tenga que hacer dos descansos cortos, uno tras una tercera parte del día y el otro pasadas dos terceras partes.',
     },
     EN: {
-        title: 'A D&D 5e encounter calculator',
+        title: 'A D&D 5e 2024 encounter calculator',
         allies: 'Allies',
         enemies: 'Enemies',
         add: 'Add',

@@ -1,4 +1,3 @@
-import { collectEnemies } from '../helpers/collectors.js';
 import { locateStr } from '../utils/lang-string-provider.js';
 import { HTMLElement, onRender } from '../utils/render-utils.js';
 import { uuid4 } from '../utils/uuid.js';
@@ -10,33 +9,17 @@ export const Enemies = () => {
         const deleteBtnId = `removeEnemy-${id}`;
         $('#enemiesList').appendChild(HTMLElement(CombatantEditor(id, type, deleteBtnId), id));
         onRender(() => ($(`#${deleteBtnId}`).onclick = () => removeEnemy(id)));
-        onchange();
         return id;
     };
 
     const removeEnemy = (id) => {
         document.getElementById(id).remove();
-        onchange();
     };
 
     onRender(() => {
         $('#addEnemyMonsterBtn').onclick = () => addEnemy('monster');
         $('#addEnemyCharacterBtn').onclick = () => addEnemy('character');
     });
-
-    const onchange = () => {
-        const monsters = collectEnemies();
-        const isLegendaryMonsterChk = $('#isLegendaryMonsterChk');
-        const isLegendaryMonsterChkLabel = $('#isLegendaryMonsterChkLabel');
-        if (monsters.length === 1) {
-            isLegendaryMonsterChk.disabled = false;
-            isLegendaryMonsterChkLabel.classList.remove('grayText');
-        } else {
-            isLegendaryMonsterChk.disabled = true;
-            isLegendaryMonsterChk.checked = false;
-            isLegendaryMonsterChkLabel.classList.add('grayText');
-        }
-    };
 
     return html`<div class="flex1">
         <div class="verticalMargin">

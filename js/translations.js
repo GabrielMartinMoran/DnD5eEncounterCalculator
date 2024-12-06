@@ -12,12 +12,8 @@ export const TRANSLATIONS = {
         difficultyAdjustmentOptions: 'Opciones de ajuste de dificultad',
         difficultyAdjustmentOptionsDisclaimer:
             'Ten cuidado al usar estas opciones dado que podrían desbalancear el combate en favor de los enemigos si no se utilizan correctamente.',
-        extraLevel1Feat:
-            'Dote extra a nivel 1 (dependiendo de las dotes elegidas, los personajes pueden obtener un aumento de poder significativo en comparación con la construcción de personajes de nivel 1 predeterminada)',
         relevanCombatMagicItems:
             'Objetos mágicos relevantes para el combate (algunos objetos mágicos aumentan significativamente la CA, las probabilidades de golpear, la CD de conjuros, o el daño que realizan los personajes)',
-        newSubclasses:
-            'Nuevas subclases (las subclases de TCE, por ejemplo, tienden a tener un aumento de poder con respecto a las del PHB)',
         obtimizedCharacters:
             'Personajes optimizados para el combate (algunos jugadores optimizan sus personajes para que sean máquinas de daño)',
         trivial: 'trivial',
@@ -32,9 +28,6 @@ export const TRANSLATIONS = {
         hard: 'dificil',
         hardExplanation:
             'Un encuentro difícil puede acabar mal para los aventureros. Los personajes más débiles podrían quedar fuera de combate y existe una pequeña posibilidad de que alguno, o incluso varios, mueran.',
-        deadly: 'mortal',
-        deadlyExplanation:
-            'Un encuentro mortal podría resultar letal para uno o más personajes. Los aventureros tendrán que elaborar una buena estrategia y reaccionar con rapidez si quieren sobrevivir. Existe un riesgo muy grande de que el grupo salga derrotado.',
         difficulty: 'Dificultad del encuentro',
         lessThan: 'Menor a',
         from: 'Desde',
@@ -49,9 +42,6 @@ export const TRANSLATIONS = {
             'Con este encuentro, el grupo competará un {perc}% de su presupuesto de XP por día de aventura.',
         dailyXPBudgetExplanation:
             'La mayoría de grupos podrán enfrentarse a entre seis y ocho encuentros de dificultad media o difíciles al día. Si la aventura tiene encuentros más fáciles, podrán lidiar con más en un mismo día. Si, por el contrario, alberga más encuentros mortales, podrán superar una menor cantidad de ellos. En general, a lo largo de un día de aventuras, el grupo probablemente tenga que hacer dos descansos cortos, uno tras una tercera parte del día y el otro pasadas dos terceras partes.',
-        isLegendaryMonster:
-            '¿Es un monstruo legendario? (Un monstruo legendario posee acciones legendarias. En XGE, hay un ajuste en el calculo de dificultad para combates con 1 solo monstruo legendario que sera aplicado si esta opción esta marcada)',
-        legendaryMonster: 'Monstruo legendario',
     },
     EN: {
         title: 'A D&D 5e encounter calculator',
@@ -66,12 +56,8 @@ export const TRANSLATIONS = {
         difficultyAdjustmentOptions: 'Difficulty adjustment options',
         difficultyAdjustmentOptionsDisclaimer:
             'Be careful when using these options as they could unbalance combat in favor of the enemies if they are not used correctly.',
-        extraLevel1Feat:
-            'Extra feat at level 1 (depending on the chosen feats, the characters may get a significant power increase compared with the default level 1 character build)',
         relevanCombatMagicItems:
             "Relevant combat magic items (some magical items increase significantly the AC, probabilities to hit, spells DC, or character's damage output)",
-        newSubclasses:
-            'New subclasses (subclasses from TCE, for instance, tend to have a higher power creep than the ones from PHB)',
         obtimizedCharacters:
             'Combat optimized characters (some players optimize their characters to be damage machines)',
         trivial: 'trivial',
@@ -86,9 +72,6 @@ export const TRANSLATIONS = {
         hard: 'hard',
         hardExplanation:
             "A hard encounter could go badly for the adventurers. Weaker characters might get taken out of the fight, and there's a slim chance that one or more characters might die.",
-        deadly: 'deadly',
-        deadlyExplanation:
-            'A deadly encounter could be lethal for one or more player characters. Survival often requires good tactics and quick thinking, and the party risks defeat.',
         difficulty: 'Encounter difficulty',
         lessThan: 'Less than',
         from: 'From',
@@ -103,8 +86,5 @@ export const TRANSLATIONS = {
             'With this encounter, the party will complete a {perc}% of their daily xp budget per adventuring day.',
         dailyXPBudgetExplanation:
             'Most adventuring parties can handle about six to eight medium or hard encounters in a day. If the adventure has more easy encounters, the adventurers can get through more. If it has more deadly encounters, they can handle fewer. In general, over the course of a full adventuring day, the party will likely need to take two short rests, about one-third and two-thirds of the way through the day.',
-        isLegendaryMonster:
-            'Is it a legendary monster? (A legendary monster has legendary actions. In XGE, there is an adjustment in the calculation of single legendary monsters difficulty that will be applied if this option is checked)',
-        legendaryMonster: 'Legendary monster',
     },
 };

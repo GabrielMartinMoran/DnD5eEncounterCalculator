@@ -11,19 +11,10 @@ export const DifficultyAdjutments = () => {
                 <small>${locateStr('difficultyAdjustmentOptionsDisclaimer')}</small>
             </div>
             <div class="column verticalMargin">
-                <label class="verticalMargin flex1 grayText" id="isLegendaryMonsterChkLabel"
-                    ><input type="checkbox" id="isLegendaryMonsterChk" disabled="true"/>${locateStr('isLegendaryMonster')}</label
-                >
-                <label class="verticalMargin flex1"
-                    ><input type="checkbox" id="levelOneFeatChk" />${locateStr('extraLevel1Feat')}</label
-                >
                 <label class="verticalMargin flex1"
                     ><input type="checkbox" id="relevantCombatMagicItemsChk" />${locateStr(
                         'relevanCombatMagicItems'
                     )}</label
-                >
-                <label class="verticalMargin flex1"
-                    ><input type="checkbox" id="newSubclassesChk" />${locateStr('newSubclasses')}</label
                 >
                 <label class="verticalMargin flex1"
                     ><input type="checkbox" id="combatOptimizedCharactersChk" />${locateStr(

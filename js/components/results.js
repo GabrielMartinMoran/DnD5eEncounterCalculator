@@ -44,8 +44,7 @@ export const Results = (results) => {
                         trivial: locateStr('trivialExplanation'),
                         easy: locateStr('easyExplanation'),
                         medium: locateStr('mediumExplanation'),
-                        hard: locateStr('hardExplanation'),
-                        deadly: locateStr('deadlyExplanation'),
+                        hard: locateStr('hardExplanation')
                     }[results.difficulty]}
                 </i>
             </div>
@@ -58,7 +57,6 @@ export const Results = (results) => {
                     <li><b>${renderDifficulty('easy')}:</b> ${locateStr('from')} ${results.thresholds.easy} XP</li>
                     <li><b>${renderDifficulty('medium')}:</b> ${locateStr('from')} ${results.thresholds.medium} XP</li>
                     <li><b>${renderDifficulty('hard')}:</b> ${locateStr('from')} ${results.thresholds.hard} XP</li>
-                    <li><b>${renderDifficulty('deadly')}:</b> ${locateStr('from')} ${results.thresholds.deadly} XP</li>
                 </ul>
             </div>
             <div>

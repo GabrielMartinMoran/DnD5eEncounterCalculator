@@ -37,10 +37,6 @@ body {
     color: #e45a1d;
 }
 
-.deadlyEncounter {
-    color: #d54f4f;
-}
-
 .column {
     display: flex;
     flex-direction: column;
